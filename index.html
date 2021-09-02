@@ -36,10 +36,14 @@
                 type="email"
                 placeholder="Your Email Address..."
                 class="text-area"
+                id="form"
               />
+              <p class="error">Please Provide an valid email address</p>
             </form>
           </div>
-          <div class="button"><a href="#"> Notify Me</a></div>
+          <div class="button">
+            <a href="#" id="click" onclick="checkEmail()"> Notify Me</a>
+          </div>
           <img
             src="./images/illustration-dashboard.png"
             alt="Dashboard"
@@ -66,5 +70,6 @@
       src="https://kit.fontawesome.com/e76558bb3f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

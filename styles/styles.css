@@ -22,6 +22,10 @@ body {
   overflow: hidden;
 }
 
+input, form {
+  font-family: 'Libre Franklin',sans-serif;
+}
+
 .container {
   height: 95vh;
   width: 100vw;
@@ -95,6 +99,13 @@ body {
   margin-bottom: 1rem;
   border: 1px solid;
   border-color: var(--blue);
+}
+
+.container .form p {
+  color: var(--lightRed);
+  margin-bottom: 1rem;
+  font-size: 00.75rem;
+  display: none;
 }
 
 .container .button {
