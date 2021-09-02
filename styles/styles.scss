@@ -2,8 +2,8 @@
     --blue: hsl(223, 87%, 63%);
 --paleBlue: hsl(223, 100%, 88%);
 --lightRed: hsl(354, 100%, 66%);
---gray: hsl(0, 0%, 59%)
---veryDarkBlue: hsl(209, 33%, 12%)
+--gray: hsl(0, 0%, 59%);
+--veryDarkBlue: hsl(209, 33%, 12%);
 }
 
 
@@ -19,22 +19,107 @@ html{
 
 body{
  font-family: 'Libre Franklin',sans-serif;
- width: 100vw;
+ overflow: hidden;
 }
 
 .container {
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    
 
     .card {
         width: 80%;
         max-width: 450px;
-        margin-top: 6rem;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
 
+    .logo {
+        margin-bottom: 5rem;
+    }
+
+    .text-Header {
+        font-size: 2rem;
+        color: var(--gray);
+        margin-bottom: 2rem;
+                
+        .soon {
+            color: black;
+            font-weight: 700;
+        }
+    }
+    .text-subHeader {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .form {
+        width: 100%;
+        input {
+            width: 80%;
+        opacity: 0.5;
+        border-radius: 2rem;
+        padding: 1rem 0;
+        text-align: left;
+        font-weight: 300;
+        padding-left: 2rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid;
+        border-color: var(--blue);
+    }
+    }
+    
+
+    .button{
+        background-color: var(--blue);
+        width: 80%;
+        padding: 1rem 0;
+        text-align: center;
+        border-radius: 2rem;
+        font-weight: 600;
+        margin-bottom: 6rem;
+
+
+        &:hover{
+            cursor: pointer;
+            background-color: var(--paleBlue);
+        }
+               a{
+                    color: #ffffff;
+                text-decoration: none;
+                             }
+    
+    }
+    .dashboard {
+        width: 80%;
+        max-width: 450px;
+    
+    }
+}
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+
+    .fab {
+        border: 0.5px solid var(--paleBlue);
+        margin: 0 1rem;
+        border-radius: 50%;
+        padding: 0.5rem 0.5rem;
+        color: var(--blue);
+
+        &:hover{
+            color: var(--paleBlue);
+        }
     }
 }
 

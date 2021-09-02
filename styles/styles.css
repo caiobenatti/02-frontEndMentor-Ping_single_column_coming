@@ -1,3 +1,11 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleBlue: hsl(223, 100%, 88%);
+  --lightRed: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
 * {
   padding: 0%;
   margin: 0;
@@ -11,6 +19,130 @@ html {
 
 body {
   font-family: 'Libre Franklin',sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  height: 95vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container .card {
+  width: 80%;
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container .logo {
+  margin-bottom: 5rem;
+}
+
+.container .text-Header {
+  font-size: 2rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.container .text-Header .soon {
+  color: black;
+  font-weight: 700;
+}
+
+.container .text-subHeader {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.container .form {
+  width: 100%;
+}
+
+.container .form input {
+  width: 80%;
+  opacity: 0.5;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  text-align: left;
+  font-weight: 300;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid;
+  border-color: var(--blue);
+}
+
+.container .button {
+  background-color: var(--blue);
+  width: 80%;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+
+.container .button:hover {
+  cursor: pointer;
+  background-color: var(--paleBlue);
+}
+
+.container .button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container .dashboard {
+  width: 80%;
+  max-width: 450px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.social .fab {
+  border: 0.5px solid var(--paleBlue);
+  margin: 0 1rem;
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+  color: var(--blue);
+}
+
+.social .fab:hover {
+  color: var(--paleBlue);
 }
 
 .attribution {
