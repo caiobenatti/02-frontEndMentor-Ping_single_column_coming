@@ -50,9 +50,9 @@ input , form {
     }
 
     .text-Header {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: var(--gray);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
                 
         .soon {
             color: black;
@@ -63,7 +63,9 @@ input , form {
         font-size: 1rem;
         margin-bottom: 2rem;
     }
-
+.buttons{
+    width: 100%;
+}
     .form {
         width: 100%;
         input {
@@ -146,4 +148,33 @@ footer{
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+
+      @media  (min-width: 1080px) {
+      .container {
+
+        .card{
+            width: 100%;
+            max-width: 800px;
+        }
+        .dashboard {
+        max-width: 700px;
+    }
+        .text-Header {
+            font-size: 3rem;
+        }
+
+        .text-subHeader {
+            font-size: 1.5rem;
+        }
+        .buttons{
+              width: 80%;
+              display: flex;
+          
+        .button {
+            width: 40%;
+            margin-left: 1rem;
+        }
+          }
+          }
       }

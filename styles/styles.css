@@ -69,9 +69,9 @@ input, form {
 }
 
 .container .text-Header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--gray);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .container .text-Header .soon {
@@ -82,6 +82,10 @@ input, form {
 .container .text-subHeader {
   font-size: 1rem;
   margin-bottom: 2rem;
+}
+
+.container .buttons {
+  width: 100%;
 }
 
 .container .form {
@@ -171,5 +175,31 @@ footer .copy {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (min-width: 1080px) {
+  .container .card {
+    width: 100%;
+    max-width: 800px;
+  }
+  .container .dashboard {
+    max-width: 700px;
+  }
+  .container .text-Header {
+    font-size: 3rem;
+  }
+  .container .text-subHeader {
+    font-size: 1.5rem;
+  }
+  .container .buttons {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .buttons .button {
+    width: 40%;
+    margin-left: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
