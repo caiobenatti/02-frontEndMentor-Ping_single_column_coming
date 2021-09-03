@@ -12,6 +12,7 @@ const emailError = () => {
 };
 
 const success = () => {
+  form.value = "Your email address...";
   error.style.display = "none";
   form.style.borderColor = "hsl(223, 87%, 63%)";
 };
